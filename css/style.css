@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: 0.5s;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    /* background-color: #FAFDF2; */
+}
+
+body{
+    background-color: #fafdf2;
+}
+
+P{
+    background-color: transparent;
+}
+
+h2{
+    background-color: transparent;
+}
+/* шапка начало */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background-color: #1A3129;
+    /* margin-top: 20px; */
+}
+
+@font-face {
+    font-family: 'p';
+    src: url(../fonts/Urbanist-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'z';
+    src: url(../fonts/Urbanist-Bold.ttf);
+}
+
+.logo{
+    color: white;
+    font-size: 30px;
+}
+
+.menu{
+    display: flex;
+    gap: 3px;
+    background-color: transparent;
+}
+
+.menu_el{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: transparent;
+}
+
+.btn_menu{
+    margin-left: 30px;
+   color: white;
+   font-size: 18px;
+   background-color: transparent;
+}
+
+.btn_menu.active{
+    color:#CBEA7B ;
+    background-color: transparent;
+}
+.s_menu{
+    margin-left: 30px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 10px;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s ease-in;
+    background-color: transparent;
+}
+.s_menu.active{
+    opacity: 1;
+    visibility: visible;
+    background-color: transparent;
+}
+
+.s_menu_wrap{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    border: 1px solid #CBEA7B;
+    background-color: #CBEA7B;
+    height: 100px;
+    width: 64px;
+}
+
+.s_menu_el{
+    padding-top: 40px;
+    color: white;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+}
+/* шапка конец */
+
+/* слайдер начало */
+.slider {
+    position: relative;
+    max-width: 1596px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides img {
+    width:1596px;
+    height: 227px;
+}
+
+button {
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.test_bt{
+   margin-left: 740px;
+   margin-top: 20px;
+}
+
+.test_bt button{
+    background-color: transparent;
+}
+
+.zagv{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.zagol{
+    font-size: 48px;
+    color: #262626;
+    margin-bottom: 20px;
+}
+
+.podz{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+/* слайдер конец */
+
+.pricing{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 150px;
+}
+
+.mon-yea{
+    margin-top: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #EEF8D3;
+    display: flex;
+    gap: 10px;
+}
+
+.mon-yea button{
+    padding: 15px 25px;
+    font-family: 'p';
+    font-size: 18px;
+    border: none;
+    color: #4C4C4C;
+    background-color: transparent;
+    border-radius: 10px;
+}
+
+.mon-yea button:hover{
+    background-color: #1A3129;
+    color: white;
+}
+
+.zag{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.zag h2{
+    font-family: 'z';
+    font-size: 48px;
+    color: #262626;
+}
+
+.zag p{
+    font-family: 'p';
+    color: #262626;
+    width: 1000px;
+}
+
+.procent{
+    font-family: 'p';
+    margin-top: 20px
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 50px;
+    gap: 30px;
+}
+
+.card{
+    padding: 50px;
+    background-color: #F6FBE9;
+    border-radius: 20px;
+    border: 1px solid #EEF8D3;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card_zag{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card_zag h3{
+    font-family: 'z';
+    font-size: 30px;
+}
+
+.card_zag p{
+    font-family: 'p';
+    font-size: 18px;
+}
+
+.card p{
+    font-family: 'p';
+    font-size: 18px;
+}
+
+.price{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.price h4{
+    font-family: 'z';
+    font-size: 40px;
+    color: #2C5446;
+}
+
+.price p {
+    color: #333333;
+}
+
+.card button{
+    width: 100%;
+    padding: 15px 25px;
+    background-color: #CBEA7B;
+    border: none;
+    border-radius: 10px;
+    font-family: 'z';
+    font-size: 18px;
+}
+
+
+/* вопрос ответ начало */
+.FAQ{
+    gap: 10px;
+    width: 1400px;
+    margin: 100px;
+}
+
+.f_item h3{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    transition: .2s ease-in;
+    margin-top: 20px;
+}
+.f_item p{
+    height: 0;
+    overflow: hidden;
+    color: black;
+    margin-top: 20px;
+    transition: .2s ease-in;
+}
+
+.down{
+    width: 50px;
+    margin-top: 10px;
+}
+
+.f_item{
+    display: flex;
+    margin-top: 30px;
+}
+
+.f_item p{
+    font-family: 'p';
+}
+/* вопрос ответ конец */
+
+/* модалка */
+.mod {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.mod_content {
+    background-color: #2C5446;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.mod_content p{
+    color: white;
+}
+
+.zakr {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.zakr:hover,
+.zakr:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
